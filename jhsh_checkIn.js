@@ -102,12 +102,12 @@ if (isGetCookie = typeof $request !== `undefined`) {
       5: "星期五",
       6: "星期六",
     };
-    if ($.whichDay === parseInt(skipDay)) {
-      let text = `今天是断签日[${$.weekMap[$.whichDay]}], 跳过签到任务。`
-      console.log(text);
-      message += text;
-      return;
-    }
+    // if ($.whichDay === parseInt(skipDay)) {
+    //   let text = `今天是断签日[${$.weekMap[$.whichDay]}], 跳过签到任务。`
+    //   console.log(text);
+    //   message += text;
+    //   return;
+    // }
     console.log(`\n共有[${bodyArr.length}]个建行生活账号\n`);
     await getLatestVersion();  // 获取版本信息
     for (let i = 0; i < bodyArr.length; i++) {
